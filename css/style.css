@@ -2,14 +2,21 @@
     margin: 0;
     padding: 0;
 }
-
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 header {
     background-color: rgb(63, 60, 60);
     padding: 20px;
     nav {
         display: flex;
-        justify-content: flex-end;
+        align-items: center;
+        justify-content: space-around;
+        img {
+            width: 100px;
+        }
         ul {
             display: flex;
             gap: 2rem;
@@ -17,21 +24,36 @@ header {
             color: white;
             font-family: Arial, Helvetica, sans-serif;
             font-weight: 700;
-            a {
-                text-decoration: none;
-                color: inherit;
-            }
+          
 
         }
     }
 
 }
 
+#homepage {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 .profile-picture {
     background-color: red;
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background-image: ;
+    background-image: url("../images/profile_picture.jpg");
+    background-size: cover;
+    }
+    p {
+        width: 800px;
+        margin-bottom: 2rem;
+    }
+    .icon-network {
+        font-size: 2rem;
+        display: flex;
+        gap: 2rem;
+    }
+
+
 }
 
