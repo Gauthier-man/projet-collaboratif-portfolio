@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Compétences Devellopeur</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
       .progress-bar::before {
         content: "";
@@ -19,8 +25,23 @@
     </style>
   </head>
   <body class="bg-gray-100 p-8">
+    <nav class="">
+      <div class="flex justify-between items-center mb-6">
+        <a href="index.html" class="text-2xl font-bold text-blue-600">
+          Mon Portfolio
+        </a>
+        <ul class="flex space-x-4">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="Skills.html">Compétences</a></li>
+          <li><a href="projet.html">Projets</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
     <div class="max-w-4xl mx-auto">
-      <h1 class="text-3xl font-bold mb-6 text-center">Comptences Technique</h1>
+      <h1 class="text-3xl font-bold mb-6 text-center font-bold">
+        Comptences Technique
+      </h1>
 
       <div class="flex justify-center gap-4 mb-8">
         <button
