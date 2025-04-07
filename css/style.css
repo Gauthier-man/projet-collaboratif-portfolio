@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.profile-picture {
+    background-color: red;
+    width: 50%;
+    height: 200px;
+}
