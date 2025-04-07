@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compétences Devellopeur</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .progress-bar::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        background-color: #3b82f6;
+        border-radius: 9999px;
+        top: 0;
+        left: 0;
+        transition: width 1s ease-in-out;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 p-8">
+    <nav class="">
+      <div class="flex justify-between items-center mb-6">
+        <a href="index.html" class="text-2xl font-bold text-blue-600">
+          Mon Portfolio
+        </a>
+        <ul class="flex space-x-4">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="Skills.html">Compétences</a></li>
+          <li><a href="projet.html">Projets</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-3xl font-bold mb-6 text-center font-bold">
+        Comptences Technique
+      </h1>
+
+      <div class="flex justify-center gap-4 mb-8">
+        <button
+          class="filter-btn px-4 py-2 bg-blue-500 text-white rounded"
+          data-filter="all"
+        >
+          Tous
+        </button>
+        <button
+          class="filter-btn px-4 py-2 bg-gray-300 rounded"
+          data-filter="frontend"
+        >
+          Frontend
+        </button>
+        <button
+          class="filter-btn px-4 py-2 bg-gray-300 rounded"
+          data-filter="backend"
+        >
+          Backend
+        </button>
+
+        <button
+          class="filter-btn px-4 py-2 bg-gray-300 rounded"
+          data-filter="other"
+        >
+          Autres
+        </button>
+      </div>
+
+      <div id="skills-list" class="space-y-6">
+        <div class="skill-card frontend bg-white p-4 rounded shadow">
+          <div class="flex justify-between mb-1">
+            <span class="font-medium">HTML</span>
+            <span>90%</span>
+          </div>
+          <div class="w-full h-4 bg-green-500 rounded relative">
+            <div
+              class="progress-bar absolute h-full rounded"
+              style="width: 90%"
+            ></div>
+          </div>
+        </div>
+
+        <div class="skill-card frontend bg-white p-4 rounded shadow">
+          <div class="flex justify-between mb-1">
+            <span class="font-medium">CSS</span>
+            <span>85%</span>
+          </div>
+          <div class="w-full h-4 bg-green-700 rounded relative">
+            <div
+              class="progress-bar absolute h-full rounded"
+              style="width: 85%"
+            ></div>
+          </div>
+        </div>
+
+        <div class="skill-card frontend bg-white p-4 rounded shadow">
+          <div class="flex justify-between mb-1">
+            <span class="font-medium">Boostrap</span>
+            <span>100%</span>
+          </div>
+          <div class="w-full h-4 bg-green-600 rounded relative">
+            <div
+              class="progress-bar absolute h-full rounded"
+              style="width: 85%"
+            ></div>
+          </div>
+        </div>
+
+        <div class="skill-card frontend bg-white p-4 rounded shadow">
+          <div class="flex justify-between mb-1">
+            <span class="font-medium">React</span>
+            <span>20%</span>
+          </div>
+          <div class="w-full h-4 bg-red-600 rounded relative">
+            <div
+              class="progress-bar absolute h-full rounded"
+              style="width: 85%"
+            ></div>
+          </div>
+        </div>
+
+        <div class="skill-card backend bg-white p-4 rounded shadow">
+          <div class="flex justify-between mb-1">
+            <span class="font-medium">Node.js</span>
+            <span>75%</span>
+          </div>
+          <div class="w-full h-4 bg-orange-600 rounded relative">
+            <div
+              class="progress-bar absolute h-full rounded"
+              style="width: 75%"
+            ></div>
+          </div>
+        </div>
+
+        <div class="skill-card backend bg-white p-4 rounded shadow">
+          <div class="flex justify-between mb-1">
+            <span class="font-medium">Angular.js</span>
+            <span>50%</span>
+          </div>
+          <div class="w-full h-4 bg-orange-500 rounded relative">
+            <div
+              class="progress-bar absolute h-full rounded"
+              style="width: 75%"
+            ></div>
+          </div>
+        </div>
+
+        <div class="skill-card backend bg-white p-4 rounded shadow">
+          <div class="flex justify-between mb-1">
+            <span class="font-medium">Python</span>
+            <span>10%</span>
+          </div>
+          <div class="w-full h-4 bg-red-700 rounded relative">
+            <div
+              class="progress-bar absolute h-full rounded"
+              style="width: 75%"
+            ></div>
+          </div>
+        </div>
+
+        <div class="skill-card other bg-white p-4 rounded shadow">
+          <div class="flex justify-between mb-1">
+            <span class="font-medium">Git </span>
+            <span>80%</span>
+          </div>
+          <div class="w-full h-4 bg-orange-700 rounded relative">
+            <div
+              class="progress-bar absolute h-full rounded"
+              style="width: 80%"
+            ></div>
+          </div>
+        </div>
+
+        <div class="skill-card other bg-white p-4 rounded shadow">
+          <div class="flex justify-between mb-1">
+            <span class="font-medium">Trello</span>
+            <span>85%</span>
+          </div>
+          <div class="w-full h-4 bg-green-700 rounded relative">
+            <div
+              class="progress-bar absolute h-full rounded"
+              style="width: 85%"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const filterButtons = document.querySelectorAll(".filter-btn");
+      const skillCards = document.querySelectorAll(".skill-card");
+
+      filterButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const filter = btn.getAttribute("data-filter");
+
+          filterButtons.forEach((b) =>
+            b.classList.remove("bg-blue-500", "text-white")
+          );
+          btn.classList.add("bg-blue-500", "text-white");
+
+          skillCards.forEach((card) => {
+            if (filter === "all" || card.classList.contains(filter)) {
+              card.style.display = "block";
+            } else {
+              card.style.display = "none";
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+
+  <!--
+  Les couleur de la barre de progression sont définies par les classes Tailwind CSS.
+
+   - 100% la couleur de la barre de progression est green-600
+   - 90% la couleur de la barre de progression est green-500
+   - 85% la couleur de la barre de progression est green-700
+   - 80% la couleur de la barre de progression est orange-700
+   - 75% la couleur de la barre de progression est orange-600
+   50% la couleur de la barre de progression est orange-500
+   - 20% la couleur de la barre de progression est red-600
+   - 0% la couleur de la barre de progression est red-500
+  -->
+</html>
